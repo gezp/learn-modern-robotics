@@ -63,6 +63,7 @@ shoulder, elbow, wrist joints考虑为spherical joint(ball-and-socket).
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 Grubler公式：$(7-1-7)*6+(1*5+3*2)=5$
 
 </details>
@@ -117,6 +118,7 @@ n条腿Grubler公式：$(((m-2)*n+2)-1-J*n)*6+(F*n)=6$
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 > Tip : $dof=m(N-1-J)+\sum_{i=1}^J f_i$ （条件：关节之间的约束相互独立)，对于平面机构m=3。
 
 (a): $(10-1-12)*3+(1*9+1*3)=3$
@@ -156,6 +158,7 @@ n条腿Grubler公式：$(((m-2)*n+2)-1-J*n)*6+(F*n)=6$
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 >  Tip : $dof=m(N-1-J)+\sum_{i=1}^J f_i$ （条件：关节之间的约束相互独立），对于空间机构m=3。
 
 (a) $ (6-1-6)*6+(2*6)=0$, 不符合直觉，该机构的明显可活动的，即自由度大于0，因为关节之间的约束不是相互独立的。
@@ -180,6 +183,7 @@ n条腿Grubler公式：$(((m-2)*n+2)-1-J*n)*6+(F*n)=6$
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 (a) $ (8-1-9)*6+(2*6+1*3)=3$, （不确定）
 
 (b) $ (9-1-9)*6+(1*9)=3$，不符合直觉，至少有4个自由度，最下面一个P关节，构成1个自由度，最上面两个P关节共同构成1个自由度，中间两个P关节独立分别构成1个自由度。
@@ -198,6 +202,7 @@ n条腿Grubler公式：$(((m-2)*n+2)-1-J*n)*6+(F*n)=6$
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 Grubler公式：$(8-1-12)*6+(3*12)=6$
 
 直觉上，上方平台应该具有4个自由度，可以在空间平移，以及自旋（绕z轴旋转）。
@@ -210,6 +215,7 @@ Grubler公式：$(8-1-12)*6+(3*12)=6$
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 (a) Grubler公式： $(8-1-9)*6+(2*6+1*3)=3$
 
 (b) 锁住3个P关节，上方平台不能再移动，该机构成为刚体，所以其自由度为3，符合Grubler公式的计算结果。
@@ -224,6 +230,7 @@ Grubler公式：$(8-1-12)*6+(3*12)=6$
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 (a) Grubler公式 $(6-1-6)*6+(1*6)=0$
 
 (b) Grubler公式 $(6-1-6)*6+(1*6)=0$
@@ -234,56 +241,74 @@ Grubler公式：$(8-1-12)*6+(3*12)=6$
 
 ### Exercise 2.16
 
-TODO
+球面四连杆机构
 
 <details>
 <summary>Solution (Click to expand)</summary>
 
-TODO
+(a) 平面Grubler公式：$(4-1-4)*3+(1*4)=1$ （没太搞明白为什么用空间Grubler公式不行）
+
+(b) C-Space拓扑结构为：$S^1$， 图示关节主动旋转，其它为被动关节。
+
+(c) 不会
 
 </details>
 
 ### Exercise 2.17
 
-TODO
+并联机器人（闭链）
 
 <details>
 <summary>Solution (Click to expand)</summary>
 
-TODO
+(a) Grubler公式：$(13-1-14)*6+(1*11+1*1+2*2)=4$
+
+(b) 增加一个约束方程（点在直线上），故损失一个自由度，最终自由度为3.
+
+(c) Grubler公式：$(11-1-12)*6+(1*12)=0$，自由度为0.
 
 </details>
 
 ### Exercise 2.18
 
-TODO
+3×PUP 平台
 
 <details>
 <summary>Solution (Click to expand)</summary>
 
-TODO
+Grubler公式：$(8-1-9)*6+(1*6+2*3)=0$，自由度为0.
+
+不符合直觉，显然可以上下移动，至少具有一个自由度。
 
 </details>
 
 ### Exercise 2.19
 
-TODO
+Dual-Arm机器人
 
 <details>
 <summary>Solution (Click to expand)</summary>
 
-TODO
+Grubler公式：$(6-1-7)*6+(1*2+2*1+3*4)=4$，自由度为4.
 
 </details>
 
 ### Exercise 2.20
 
-TODO
+蜻蜓机器人
 
 <details>
 <summary>Solution (Click to expand)</summary>
 
-TODO
+(a) Grubler公式：$(17-1-20)*6+(1*8+1*4+2*4+3*4)=8$，自由度为8.
+
+(b) 因为一个刚体具有6个自由度，所以总和为$8+6=14$个自由度。
+
+(c)  只有4个自由度，当机器人站立在地面时，每一条腿不能发生旋转，即固定住了，所以只有翅膀可以动，故自由度为4。
+
+> Tip：不能使用Grubler公式？
+>
+> 每一个接触点可以看作一个S关节，地面看作一个link，即由Grubler可得：$(18-1-24)*6+(1*8+1*4+2*4+3*8)=-42+44=2$
 
 </details>
 
