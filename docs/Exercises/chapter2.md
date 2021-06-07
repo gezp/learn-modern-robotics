@@ -317,6 +317,7 @@ Dual-Arm机器人的自由度
 
 <details>
 <summary>Solution (Click to expand)</summary>
+
 物体可以在桌面滑动，将物体与桌面的约束看作一个关节，其自由度为2。
 
 则由Grubler公式：$(7-1-8)*6+(1*2+2*1+3*4+2*1)=6$，自由度为6。
