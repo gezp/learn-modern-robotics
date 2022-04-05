@@ -53,6 +53,7 @@ $$
 **Soulution:**
 
 根据题意：$p'=Rot(\hat z,-120)Rot(\hat y,135)Rot(\hat x,30)p=Rp$
+
 (a) 先计算$R=Rot(\hat z,-120)Rot(\hat y,135)Rot(\hat x,30)= \\
 \begin{bmatrix}
 cos(-120)&-sin(-120)&0\\
@@ -70,9 +71,10 @@ cos(135)&0&sin(135)\\
 0&sin(30)&cos(30)
 \end{bmatrix}
 $
+
 然后计算$p'=Rp$
 
-(b) R在(a)中已经计算
+(b) R在(a)中已经计算。
 
 
 ## Exercise 3.3
@@ -82,6 +84,7 @@ $
 **Soulution:**
 
 (1) 通过观察，坐标元素只是顺序变了，说明是通过旋转坐标轴得到，不难得到
+
 $R_1=\begin{bmatrix}
 0&0&1\\
 1&0&0\\
